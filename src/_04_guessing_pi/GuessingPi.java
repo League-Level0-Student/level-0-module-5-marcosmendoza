@@ -16,9 +16,22 @@ public static void main(String[] args) {
 
 		// 3. Print out the first 3 digits of Pi to the console.
 
+	
 System.out.println("3.14");
 
+String pi = "3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862";
 
+for (int j = 0; j < pi.length(); j++) {
+	String ye = JOptionPane.showInputDialog("what is yall nextus digitis of pi");
+	char fly= pi.charAt(0);
+	if(ye.equals(pi.charAt(j)+"")) {
+		JOptionPane.showMessageDialog(null, "yéall got it right" );
+	}
+	else {
+		JOptionPane.showMessageDialog(null, "yall got it wrong");
+		break;
+	}
+}
 		//    The first value is "pi.charAt(0)", the second is "pi.charAt(1)", etc.
 		//    Run your program to see how this works.
 
