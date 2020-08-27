@@ -14,12 +14,47 @@ public class CircleRing {
     	String ans = JOptionPane.showInputDialog("What shape do you want to be drawn(Square, Triangle, Circle, Rings)");
     	ans=ans.toLowerCase();
     	
+    	if(ans.equals("diamond")) {
+    		rob.turn(25);
+    		rob.move(100);
+    		rob.turn(90);
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+    	}
+    	
+    	if (ans.equals("hexagon")) {
+    		
+    		rob.penDown();
+    		rob.setSpeed(100000);
+    	rob.turn(90);
+    	rob.move(100);
+    	rob.turn(45);
+    	rob.move(100);
+    	rob.turn(90);
+    	rob.move(100);
+    	rob.turn(45);
+    	rob.move(100);
+    	rob.turn(45);
+    	rob.move(100);
+    	rob.turn(90);
+    	rob.move(100);
+    	rob.moveTo(1,1);
+    	}
     	if (ans.equals("circle")) {
     		rob.setSpeed(100000);
     	rob.penDown();
     		for (int i = 0; i < 360/1; i++) {
     			rob.move(3);
     			rob.turn(1);
+    			
     		}
     	
     	rob.moveTo(1,1);
